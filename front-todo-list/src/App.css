@@ -1,0 +1,219 @@
+.header {
+  text-align: center;
+  background-color: rgb(43, 255, 0);
+  padding: 10px;
+  color: rgb(0, 99, 0);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+}
+
+.header div input {
+  align-self: center;
+}
+
+.header div box-icon {
+  position: relative;
+  cursor: pointer;
+  top: 13px;
+  right: 40px;
+  fill: #ccc;
+  transition-duration: 200ms;
+}
+
+.header div box-icon:hover {
+  fill:#a3a3a3;;
+}
+
+.header div box-icon:active {
+  fill:#fff;;
+}
+
+.header input {
+  width: 100%;
+  max-width: 400px; /* Ajuste conforme necessário */
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  transition: border-color 0.5s, box-shadow 0.5s;
+  outline: none;
+}
+
+
+main h2 {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+main h2 button {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition-duration: 200ms;
+}
+
+main h2 button:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 3px 6px rgba(43, 255, 0, 0.322);
+}
+
+main h2 button:active {
+  transform: scale(1.04);
+  box-shadow: 0px 1px 3px rgba(43, 255, 0, 0.322);
+}
+
+main .list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 36px;
+  padding: 0 15px;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: calc(25% - 40px);
+  min-width: 150px;
+  padding: 5px 10px 10px 10px;
+  background-color: white;
+  border-radius: 8px;
+  color: rgb(100, 100, 100);
+}
+
+.task .oculte {
+  display: none;
+}
+
+.task h3 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.task p {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.task box-icon {
+  cursor: pointer;
+}
+
+box-icon:hover {
+  fill: #d43535;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  min-width: 500px;
+  background-color: #3a3a3a;
+  border-radius: 8px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 200ms;
+}
+
+.modal.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal form h3 box-icon {
+  cursor: pointer;
+  fill: #999;
+  transition-duration: 200ms;
+}
+
+.modal form h3 box-icon:hover {
+  fill: blueviolet;
+}
+
+.modal form h3{
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal form label {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: .75px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.modal form input, .modal form textarea {
+  width: 95%;
+  padding: 0 10px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid #a0a0a0;
+  margin-bottom: 10px;
+  transition-duration: 200ms;
+}
+
+.modal form input:focus, .modal form textarea:focus {
+  border-color: blueviolet;
+}
+
+.modal form textarea {
+  padding-top: 10px;
+  height: 100px;
+}
+
+.modal form button {
+  width: 100%;
+  height: 40px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .75px;
+  transition-duration: 200ms;
+}
+
+.modal form button:hover {
+  background-color: #6922ac;
+}

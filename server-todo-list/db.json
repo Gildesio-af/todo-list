@@ -1,0 +1,29 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Fazer compras",
+      "description": "Comprar itens essenciais para a casa"
+    },
+    {
+      "id": "2",
+      "title": "Estudar React",
+      "description": "Revisar hooks e context API"
+    },
+    {
+      "id": "3",
+      "title": "Fazer exercícios",
+      "description": "Realizar 30 minutos de exercícios aeróbicos"
+    },
+    {
+      "id": "6ced",
+      "title": "NLW",
+      "description": "Fazer o projeto de java"
+    },
+    {
+      "id": "5382",
+      "title": "NLW 2",
+      "description": "Fazer o projeto de react"
+    }
+  ]
+}
